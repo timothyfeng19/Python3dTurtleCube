@@ -30,7 +30,7 @@ cube_y = 0
 cube_z = 5
 
 def coords(x, y, z):
-    global zoom, distance, rotation_x, rotation_y, cube_x, cube_y, cube_z
+    global zoom, rotation_x, rotation_y, cube_x, cube_y, cube_z
 
     temp_x = x * math.cos(rotation_y) + (y * math.sin(rotation_x) + z * math.cos(rotation_x)) * math.sin(rotation_y)
     temp_y = y * math.cos(rotation_x) - z * math.sin(rotation_x)
